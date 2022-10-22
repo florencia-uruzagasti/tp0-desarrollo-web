@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Jost;
+}
+
+/*HEADER*/
+header{
+    height:100px;
+    background: #C1A57B;
+    padding: 0 50px;
+    color: #fff;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo{
+    text-transform: uppercase;
+    color: #ECECEC;
+    font-weight: 200;
+}
+
+.menu a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px ;
+    transition: 0.4s;
+}
+.display-menu,
+.hide-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display:none;
+    transition:0.4s;
+}
+
+.display-menu{
+    order:1;
+}
+.menu a:hover,
+.display-menu:hover,
+.hide-menu:hover{
+    color: #7E8A97;
+}
+
+#check{
+    display: none;
+}
+
+/*Provinces*/
+#provinces{
+    padding:0 50px;
+    background-color:#ECECEC;
+    display: flex;
+    justify-content: center;
+}
+#provinces div{
+    padding: 30px 30px;
+}
+
+#provinces div h2, h3, h4{
+    font-size: 30px;
+    padding:15px 0px;
+}
+
+#provinces div p{
+    font-size: 17px;
+}
+/* FOOTER */
+footer{
+    background-color: #C1A57B;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+
+/*RESPONSIVE*/
+@media (max-width: 1100px){
+    /*Header*/
+    .display-menu,
+    .hide-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width:100%;
+        height: 100vh;
+        background: #C1A57B;
+        right: -100%;
+        top:0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index:100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .hide-menu{
+        position: absolute;
+        top:40px;
+        right:40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+    /* PROVINCES */
+    #provinces{
+        flex-direction: column;
+    }
+}
