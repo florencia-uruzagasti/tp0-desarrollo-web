@@ -5,71 +5,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alojamientos</title>
+    <link rel="stylesheet" href="/css/styles-prov.css">
+    <title>Provincias</title>
 </head>
 
 <body>
     <header>
-        <header>
-            <img src="https://media.tacdn.com/media/attractions-content--1x-1/0b/2c/ef/d8.jpg" alt="">
-            <img src="https://www.southamerica.travel/wp-content/uploads/2019/08/train-bridge-argentina-gallery.jpg"
-                alt="">
-            <img src="https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/dtwfnq4tdau8oilglero"
-                alt="">
-            <img src="https://c3f5t3c3.rocketcdn.me/wp-content/uploads/2015/07/cafayate.jpg" alt="">
-            <img src="https://hablemosdeargentina.com/wp-content/uploads/2018/05/Iruya-Salta.jpg" alt="">
-            <h1> <a href="index.html">Noroeste Argentino</a></h1>
-        </header>
+        <!--BARRA DE NAVEGACION Y HEADER-->
+        <h1 class="logo">Noroeste Argentino</h1>
+        <input type="checkbox" id="check">
+        <label for="check" class="display-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="alojamiento.html">Alojamientos</a>
+            <a href="provincias.html">Provincias</a>
+            <a href="tendencias.html">Tendencias</a>
+            <a href="contacto.html">Contacto</a>
+            <label for="check" class="hide-menu">
+                &#215
+            </label>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="alojamiento.html">Alojamientos</a></li>
-            <li><a href="#provincias.html">Provincias</a></li>
-            <li><a href="tendencias.html">Tendencias</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
 
+    <!--Cada seccion de cada provincia-->
     <main>
-        <h2>Jujuy</h2>
-        <p>Jujuy, provincia del remoto noroeste de Argentina, se caracteriza por sus espectaculares formaciones rocosas
-            y colinas de la Quebrada de Huamahuaca. Este valle y sus aldeas quechuas se ubican en el norte de la capital
-            provincial y el acceso regional, San Salvador de Jujuy. En el sur del valle, las laderas rocosas del icónico
-            Cerro de los Siete Colores sobresalen de la villa colonial Purmamarca.</p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1877637.000559548!2d-65.6820085!3d-23.197202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9404a1f6e75c0087%3A0x815e91b230ce4e79!2sJujuy!5e0!3m2!1ses-419!2sar!4v1665436570029!5m2!1ses-419!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <h2>Salta</h2>
-        <p>Salta es una provincia del noroeste de Argentina que abarca partes de la cordillera de los Andes, bosques de
-            las Yungas y zonas semiáridas del Gran Chaco. La capital, también llamada Salta, tiene arquitectura
-            colonial, incluida la Catedral de Salta neoclásica. Es el punto de partida del Tren a las Nubes, un
-            ferrocarril a gran altura. La pequeña localidad de Cafayate es una vía de acceso a viñas y a las
-            espectaculares formaciones rocosas de los Valles Calchaquíes.</p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726306.56356267!2d-65.45488635!3d-24.20778635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0d2938ead0c7%3A0x8b4a1bd1f6c37998!2sSalta!5e0!3m2!1ses-419!2sar!4v1665436879404!5m2!1ses-419!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <h2>Tucumán</h2>
-        <p>Tucumán, una pequeña provincia en el noroeste argentino, se divide entre las montañas de los Andes al oeste y
-            las tierras bajas de Gran Chaco al este. La capital, San Miguel de Tucumán, es considerada la cuna del país.
-            El museo Casa Histórica de la Independencia es el lugar donde el país se declaró independiente de España en
-            1816. Tucumán también tiene sitios arqueológicos, como las ruinas de los Quilmes, un asentamiento que data
-            del siglo IX.</p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1819551.8000349149!2d-65.33000480000001!3d-27.0361025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942245e9a8094c59%3A0xe9c2852a1c5d0cfd!2zVHVjdW3DoW4!5e0!3m2!1ses-419!2sar!4v1665437312202!5m2!1ses-419!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section id="provinces">
+            <div>
+                <h2>Jujuy</h2>
+                <p>Jujuy, provincia del remoto noroeste de Argentina, se caracteriza por sus espectaculares formaciones
+                    rocosas
+                    y colinas de la Quebrada de Huamahuaca. Este valle y sus aldeas quechuas se ubican en el norte de la
+                    capital
+                    provincial y el acceso regional, San Salvador de Jujuy. En el sur del valle, las laderas rocosas del
+                    icónico
+                    Cerro de los Siete Colores sobresalen de la villa colonial Purmamarca.</p> <br>
+            </div>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1877637.000559548!2d-65.6820085!3d-23.197202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9404a1f6e75c0087%3A0x815e91b230ce4e79!2sJujuy!5e0!3m2!1ses-419!2sar!4v1665436570029!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    
+        <section id="provinces">
+            <div>
+                <h3>Salta</h3>
+                <p>Salta es una provincia del noroeste de Argentina que abarca partes de la cordillera de los Andes, bosques
+                    de
+                    las Yungas y zonas semiáridas del Gran Chaco. La capital, también llamada Salta, tiene arquitectura
+                    colonial, incluida la Catedral de Salta neoclásica. Es el punto de partida del Tren a las Nubes, un
+                    ferrocarril a gran altura. La pequeña localidad de Cafayate es una vía de acceso a viñas y a las
+                    espectaculares formaciones rocosas de los Valles Calchaquíes.</p> <br>
+            </div>
+    
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726306.56356267!2d-65.45488635!3d-24.20778635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0d2938ead0c7%3A0x8b4a1bd1f6c37998!2sSalta!5e0!3m2!1ses-419!2sar!4v1665436879404!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    
+        <section id="provinces">
+                <div>
+                    <h4>Tucumán</h4>
+                    <p>Tucumán, una pequeña provincia en el noroeste argentino, se divide entre las montañas de los Andes al
+                        oeste y
+                        las tierras bajas de Gran Chaco al este. La capital, San Miguel de Tucumán, es considerada la cuna del
+                        país.
+                        El museo Casa Histórica de la Independencia es el lugar donde el país se declaró independiente de España
+                        en
+                        1816. Tucumán también tiene sitios arqueológicos, como las ruinas de los Quilmes, un asentamiento que
+                        data
+                        del siglo IX.</p> <br>
+                </div>
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1819551.8000349149!2d-65.33000480000001!3d-27.0361025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942245e9a8094c59%3A0xe9c2852a1c5d0cfd!2zVHVjdW3DoW4!5e0!3m2!1ses-419!2sar!4v1665437312202!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </section>
     </main>
     <footer>
-        <p>Proyecto desarrollado por:</p>
+        <p>&copy; Proyecto desarrollado por:</p>
         <ul>
-            <!-- link a la red social de cada una que prefiera -->
-            <li><a href="#">Flor</a></li>
-            <li><a href="#">Paula</a></li>
-            <li><a href="#">Rocio</a></li>
+            <li>Florencia</li>
+            <li>Paula</li>
+            <li>Rocio</li>
         </ul>
+        <p>Todos los derechos reservados 2022</p>
     </footer>
 </body>
 
