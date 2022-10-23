@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Jost;
 }
+
 /*HEADER*/
-header{
-    justify-content:space-between;
-    align-items: center;    
+header {
+    justify-content: space-between;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
 }
-header img{
+
+header img {
     width: 19%;
     height: 127px;
 }
-.logo{
+
+.logo {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
@@ -24,9 +28,9 @@ header img{
     color: #000;
     width: 100%;
 }
- 
+
 /*NAV*/
-nav{
+nav {
     background-color: #C1A57B;
     display: flex;
     justify-content: space-between;
@@ -34,7 +38,7 @@ nav{
     padding-left: 20px;
     padding-right: 20px;
 }
- 
+
 .menu a {
     color: #fff;
     text-transform: uppercase;
@@ -42,22 +46,25 @@ nav{
     padding: 20px;
     transition: 0.4s;
 }
-.menu a:hover{
+
+.menu a:hover {
     color: #7e8a97;
 }
- 
+
 /*Banner*/
-#banner{
-    padding:0 50px;
+#banner {
+    padding: 0 50px;
     margin-top: 25px;
     display: flex;
     justify-content: center;
     ;
 }
-#banner div{
+
+#banner div {
     padding: 30px;
     flex: 50%;
 }
+
 #banner a {
     display: inline-block;
     text-decoration: none;
@@ -68,26 +75,30 @@ nav{
     margin-top: 15px;
     transition: 0.4s;
 }
-#banner a:hover{
+
+#banner a:hover {
     background: #C1A57B;
-    color:#fff;
+    color: #fff;
 }
-#banner p{
+
+#banner p {
     font-size: 20px;
 }
-#banner h1{
+
+#banner h1 {
     font-size: 30px;
 }
- 
+
 /*Section 2*/
-#relevant{
+#relevant {
     display: flex;
     margin-top: 25px;
     justify-content: center;
-    padding:0 50px;
- 
+    padding: 0 50px;
+
 }
-#relevant a{
+
+#relevant a {
     display: inline-block;
     text-decoration: none;
     color: #000;
@@ -97,126 +108,142 @@ nav{
     margin-top: 15px;
     transition: 0.4s;
 }
-#relevant a:hover{
+
+#relevant a:hover {
     background: #C1A57B;
-    color:#fff;
+    color: #fff;
 }
-#relevant div h1, h2{
+
+#relevant div h1,
+h2 {
     font-size: 30px;
     text-align: center;
 }
-#relevant img{
+
+#relevant img {
     height: 290px;
     width: 460px;
 }
-#relevant p{
+
+#relevant p {
     font-size: 20px;
 }
-.history{
+
+.history {
     flex: 50%;
     padding: 30px 0 30px 30px;
     align-items: center;
     /* max-width: 50%; */
 }
- 
-.gastronomy{
+
+.gastronomy {
     padding: 30px 30px 30px 0;
     flex: 50%;
     /* max-width: 50%; */
     /* display: grid; */
-    
+
 }
- 
+
 .gastronomy .gastronomy-container {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 1fr;
-  column-gap: 0px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr;
+    column-gap: 0px;
 }
- 
+
 /*Section 3*/
-#relevant-2{
+#relevant-2 {
     display: flex;
     margin-top: 25px;
     justify-content: center;
-    padding:0 50px;
+    padding: 0 50px;
 }
- 
-#relevant-2 div h5, h6{
+
+#relevant-2 div h5,
+h6 {
     font-size: 30px;
     text-align: center;
 }
-#relevant-2 p{
+
+#relevant-2 p {
     font-size: 20px;
 }
-#relevant-2 img{
+
+#relevant-2 img {
     height: 360px;
     width: 460px;
     padding: 30px 30px;
 }
-#relevant-2 article{
+
+#relevant-2 article {
     text-align: left;
     padding: 30px 30px;
 }
- 
+
 /*Section 4*/
 #relevant-3 {
-    display:flex;
+    display: flex;
     padding: 20px 20px;
 }
- 
-#relevant-3 article{
+
+#relevant-3 article {
     text-align: left;
 }
-#relevant-3 p{
+
+#relevant-3 p {
     font-size: 20px;
 }
- 
+
 /*Section 5*/
-#relevant-4{
+#relevant-4 {
     text-align: center;
 }
-#relevant-4 .tittle-section-4{
+
+#relevant-4 .tittle-section-4 {
     text-align: center;
     font-size: 40px;
     font-weight: 25px;
 }
-#relevant-4 .jujuy{
+
+#relevant-4 .jujuy {
     display: inline-block;
-    padding:20px;
-    margin-right: 20px;
-    font-size: 20px;
-}
-#relevant-4 .salta{
-    display:inline-block;
     padding: 20px;
     margin-right: 20px;
     font-size: 20px;
 }
-#relevant-4 .tucuman{
-    display:inline-block;
+
+#relevant-4 .salta {
+    display: inline-block;
     padding: 20px;
     margin-right: 20px;
     font-size: 20px;
 }
- 
- 
+
+#relevant-4 .tucuman {
+    display: inline-block;
+    padding: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+
 /*Seccion 6*/
-#relevant-5 img{
+#relevant-5 img {
     height: 190px;
     width: 320px;
     justify-content: space-between;
 }
-#relevant-5 .logo{
-    justify-content:space-between;
-    align-items: center;    
+
+#relevant-5 .logo {
+    justify-content: space-between;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
 }
 
 /*Footer*/
 
-footer{
+footer {
     background-color: #C1A57B;
     text-align: center;
     font-size: 20px;
