@@ -20,7 +20,7 @@ header{
 
 .logo{
     text-transform: uppercase;
-    color: #ECECEC;
+    color: #000;
     font-weight: 200;
 }
 
@@ -69,8 +69,12 @@ header{
 }
 
 #provinces div p{
-    font-size: 17px;
+    font-size: 18px;
 }
+#provinces iframe{
+    padding: 15px;
+}
+
 /* FOOTER */
 footer{
     background-color: #C1A57B;
@@ -81,7 +85,7 @@ footer{
 
 
 /*RESPONSIVE*/
-@media (max-width: 1100px){
+@media (max-width: 1396px){
     /*Header*/
     .display-menu,
     .hide-menu{
