@@ -94,6 +94,9 @@ nav {
     width: 741px;
     padding-bottom: 25px;
 }
+#banner iframe{
+    padding-bottom: 25px;
+}
 
 /*Section 2*/
 #relevant {
