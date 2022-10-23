@@ -86,16 +86,21 @@ nav {
     padding: 35px;
 }
 
-#banner h1,h3 {
+#banner h1,
+h3 {
     font-size: 30px;
-    padding:25px;
+    padding: 0px 23px 25px 10px;
+    text-align: center;
 }
-#banner img{
+
+
+#banner img {
     height: 556px;
     width: 741px;
     padding-bottom: 25px;
 }
-#banner iframe{
+
+#banner iframe {
     padding-bottom: 25px;
 }
 
@@ -105,17 +110,14 @@ nav {
     margin-top: 25px;
     justify-content: center;
     padding: 0 50px;
-
+    max-width: 100%;
 }
 
 #relevant a {
     display: inline-block;
-    text-decoration: none;
     color: #000;
-    padding: 10px 20px;
-    border: 3px solid #C1A57B;
-    border-radius: 40px;
-    margin-top: 15px;
+    padding: 9px 20px;
+    margin-top: 10px;
     transition: 0.4s;
 }
 
@@ -128,11 +130,16 @@ nav {
 h2 {
     font-size: 30px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 #relevant img {
     height: 330px;
     width: 540px;
+}
+#relevant .gastronomy-container img{
+    height: 260px;
+    width: 330px;
 }
 
 #relevant p {
@@ -156,9 +163,10 @@ h2 {
 
 .gastronomy .gastronomy-container {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 49% 53%;
     grid-template-rows: 1fr;
     column-gap: 0px;
+    padding-bottom: 10px;
 }
 
 /*Section 3*/
@@ -189,6 +197,10 @@ h6 {
     text-align: left;
     padding: 30px 30px;
 }
+#relevant .text-history{
+    padding-right: 75px;
+}
+
 
 /*Section 4*/
 #relevant-3 {
@@ -202,6 +214,52 @@ h6 {
 
 #relevant-3 p {
     font-size: 20px;
+}
+
+#relevant-3 .formulario {
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+    align-items: center;
+    width: 1480px;
+    height: 640px;
+    margin: auto;
+}
+
+#relevant-3 form h3 {
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 35px;
+    text-align: center;
+    color: #7e8a97;
+}
+
+label {
+    color: #d7d1c9;
+}
+
+.formulario p {
+    color: #ede9e4;
+    font-size: 30px !important;
+}
+
+.formulario .form-group input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.formulario button {
+    background-color: #d7d1c9;
+    border: none;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
 }
 
 /*Section 5*/
@@ -242,6 +300,7 @@ h6 {
     height: 190px;
     width: 320px;
     justify-content: space-between;
+    padding: 0px 20px 0px 20px;
 }
 
 #relevant-5 .logo {
