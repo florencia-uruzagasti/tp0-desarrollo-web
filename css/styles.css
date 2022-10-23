@@ -83,10 +83,16 @@ nav {
 
 #banner p {
     font-size: 20px;
+    padding: 35px;
 }
 
 #banner h1 {
     font-size: 30px;
+}
+#banner img{
+    height: 556px;
+    width: 741px;
+    padding-bottom: 25px;
 }
 
 /*Section 2*/
