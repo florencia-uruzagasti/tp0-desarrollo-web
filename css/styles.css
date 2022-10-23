@@ -8,7 +8,9 @@
 /*HEADER*/
 header{
     justify-content:space-between;
-    align-items: center;
+    align-items: center;    
+    display: flex;
+    flex-wrap: wrap;
 }
 header img{
     width: 19%;
@@ -20,8 +22,9 @@ header img{
     text-align: center;
     font-size: 30px;
     color: #000;
+    width: 100%;
 }
-
+ 
 /*NAV*/
 nav{
     background-color: #C1A57B;
@@ -31,7 +34,7 @@ nav{
     padding-left: 20px;
     padding-right: 20px;
 }
-
+ 
 .menu a {
     color: #fff;
     text-transform: uppercase;
@@ -42,7 +45,7 @@ nav{
 .menu a:hover{
     color: #7e8a97;
 }
-
+ 
 /*Banner*/
 #banner{
     padding:0 50px;
@@ -52,7 +55,8 @@ nav{
     ;
 }
 #banner div{
-    padding: 30px 30px;
+    padding: 30px;
+    flex: 50%;
 }
 #banner a {
     display: inline-block;
@@ -74,14 +78,14 @@ nav{
 #banner h1{
     font-size: 30px;
 }
-
+ 
 /*Section 2*/
 #relevant{
     display: flex;
     margin-top: 25px;
     justify-content: center;
     padding:0 50px;
-
+ 
 }
 #relevant a{
     display: inline-block;
@@ -109,15 +113,27 @@ nav{
     font-size: 20px;
 }
 .history{
-    padding: 25px 25px;
+    flex: 50%;
+    padding: 30px 0 30px 30px;
     align-items: center;
+    /* max-width: 50%; */
 }
-
+ 
 .gastronomy{
-    padding: 25px 25px;
-    display: grid;
+    padding: 30px 30px 30px 0;
+    flex: 50%;
+    /* max-width: 50%; */
+    /* display: grid; */
+    
 }
-
+ 
+.gastronomy .gastronomy-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr;
+  column-gap: 0px;
+}
+ 
 /*Section 3*/
 #relevant-2{
     display: flex;
@@ -125,7 +141,7 @@ nav{
     justify-content: center;
     padding:0 50px;
 }
-
+ 
 #relevant-2 div h5, h6{
     font-size: 30px;
     text-align: center;
@@ -142,20 +158,20 @@ nav{
     text-align: left;
     padding: 30px 30px;
 }
-
+ 
 /*Section 4*/
 #relevant-3 {
     display:flex;
     padding: 20px 20px;
 }
-
+ 
 #relevant-3 article{
     text-align: left;
 }
 #relevant-3 p{
     font-size: 20px;
 }
-
+ 
 /*Section 5*/
 #relevant-4{
     text-align: center;
@@ -176,7 +192,6 @@ nav{
     padding: 20px;
     margin-right: 20px;
     font-size: 20px;
-
 }
 #relevant-4 .tucuman{
     display:inline-block;
@@ -184,13 +199,19 @@ nav{
     margin-right: 20px;
     font-size: 20px;
 }
-
-
+ 
+ 
 /*Seccion 6*/
 #relevant-5 img{
     height: 190px;
     width: 320px;
     justify-content: space-between;
+}
+#relevant-5 .logo{
+    justify-content:space-between;
+    align-items: center;    
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*Footer*/
