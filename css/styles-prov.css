@@ -64,7 +64,7 @@ header a{
     justify-content: center;
 }
 #provinces div{
-    padding: 30px 30px;
+    padding: 20px 30px 20px 0px;
 }
 
 #provinces div h2, h3, h4{
@@ -77,6 +77,9 @@ header a{
 }
 #provinces iframe{
     padding: 15px;
+    width: 275px;
+    height: 275px;
+    padding-left: 0px;
 }
 
 /* FOOTER */
