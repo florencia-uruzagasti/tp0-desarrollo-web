@@ -12,7 +12,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
     <script src="/js/validar.js"></script>
-    
+
     <title>Norte Argentino | Contacto</title>
 </head>
 
@@ -20,53 +20,57 @@
     <main>
         <header>
             <!-- Imagenes del encabezado-->
-            <img src="https://media.tacdn.com/media/attractions-content--1x-1/0b/2c/ef/d8.jpg" alt="Norte Argentino" >
+            <img src="https://media.tacdn.com/media/attractions-content--1x-1/0b/2c/ef/d8.jpg" alt="Norte Argentino">
             <img src="https://www.southamerica.travel/wp-content/uploads/2019/08/train-bridge-argentina-gallery.jpg "
-                alt="Norte Argentino" >
+                alt="Norte Argentino">
             <img src="https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/dtwfnq4tdau8oilglero"
-                alt="Norte Argentino" >
-            <img src="https://c3f5t3c3.rocketcdn.me/wp-content/uploads/2015/07/cafayate.jpg" alt="Norte Argentino" >
-            <img src="https://hablemosdeargentina.com/wp-content/uploads/2018/05/Iruya-Salta.jpg" alt="Norte Argentino" >
-            
+                alt="Norte Argentino">
+            <img src="https://c3f5t3c3.rocketcdn.me/wp-content/uploads/2015/07/cafayate.jpg" alt="Norte Argentino">
+            <img src="https://hablemosdeargentina.com/wp-content/uploads/2018/05/Iruya-Salta.jpg" alt="Norte Argentino">
+
         </header>
         <div class="logo">
-            <a href="index.html" class="logo"><h1>Noroeste Argentino</h1></a>
+            <a href="index.html" class="logo">
+                <h1>Noroeste Argentino</h1>
+            </a>
         </div>
         <nav class="menu">
-                <!-- Navegacion del usuario, por aqui el usuario entrara para ser redirigido a otras páginas -->
-                <a href="#index.html">Inicio</a>
-                <a href="alojamiento.html">Alojamientos</a>
-                <a href="provincias.html">Provincias</a>
-                <a href="tendencias.html">Tendencias</a>
-                <a href="contacto.html">Contacto</a>
+            <!-- Navegacion del usuario, por aqui el usuario entrara para ser redirigido a otras páginas -->
+            <a href="#index.html">Inicio</a>
+            <a href="alojamiento.html">Alojamientos</a>
+            <a href="provincias.html">Provincias</a>
+            <a href="tendencias.html">Tendencias</a>
+            <a href="contacto.html">Contacto</a>
         </nav>
         <form action="#" target="_blank" name="Formulario" id="Formulario" onsubmit="return validar()">
             <label for="nombre:">Nombre (Obligatorio):</label>
-            <input type="text" name="nombre" id="nombre"><br>
+            <input type="text" name="nombre" id="nombre" required><br>
             <label for="Apellido:">Apellido (Obligatorio):</label>
-            <input type="text" name="Apellido" id="apellido"><br>
+            <input type="text" name="Apellido" id="apellido" required><br>
             <label for="email:">Email (Obligatorio):</label>
-            <input size="50" type="email" name="email" id="email"><br>
+            <input size="50" type="email" name="email" id="email" required><br>
             <label for="celular">Celular (sin + 54 9)</label>
-            <input type="tel" name="celular" id="celular"><br>
+            <input type="tel" name="celular" id="celular" required><br>
             <label for="provincia">Provincia</label>
-            <input type="text" name="provincia" id="provincia"><br>
+            <input type="text" name="provincia" id="provincia" required><br>
             <label for="comentario">¿Cúal es tu consulta?:</label><br>
-            <textarea name="comentario" id="comentario" placeholder="Escribe aqui (campo obligatorio)" cols="30" rows="10"></textarea><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpiar los campos">
+            <textarea name="comentario" id="comentario" placeholder="Escribe aqui (campo obligatorio)" cols="30"
+                rows="10" required ></textarea><br>
+            <input id="send" type="submit" value="Enviar"  class="btn">
         </form>
-        
+
     </main>
     <footer>
         &copy;Proyecto desarrollado por:
-        <ul>
+        <ul class="integrants">
             <li>Florencia</li>
             <li>Paula</li>
             <li>Rocio</li>
         </ul>
         <p>Todos los derechos reservados 2022</p>
     </footer>
+    <!-- custom js file link -->
+    <!-- <script src="/js/main.js"></script> -->
 </body>
 
 </html>
