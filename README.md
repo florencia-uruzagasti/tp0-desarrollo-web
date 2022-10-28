@@ -23,6 +23,18 @@ En la rama feature/Uruzagasti-agregandoCSS estuve trabajando:
 * Los commits que fui realizando son descriptivos asi que cualquiera que acceda al código podra visualizar que tipo de cambios se hicieron,
 gran parte del codigo(tanto en el css como en el html) se trato de ocupar los comentarios para el mismo fin que mencione anteriormente.
 
+### Rocio Micaela Alderete
+En la rama feature/Alderete-agregandoHtml estuve agregando:
+* El archivo html de cada una de las paginas que habiamos acordado en la maquetación previa antes del desarrollo.
+* Completamos el contenido grafico con el uso de iframe para insertar videos y mapas de Google.
+En la rama feature/Alderete-agregoTucuman:
+* Agregue una hoja de Html individual para una provincia pero luego se descartó el cambio por que consideramos repetitivo el contenido asi que esta rama no se usó.
+En la rama featureAlderete-Js:
+* Se creo en la carpeta que contiene el archivo de JavaScript, el cual contiene la funcion que verifica que los datos del formulario sean correctos. Controla el largo de los datos tal como sería necesario para guardarlos en una base de datos y que los campos obligatorios no esten vacios. Controla el tipo de dato en el campo celular y tambien verifica que la cadena de caracteres de email tenga la estructura valida con el uso de una expresión. En caso de ser invalidos los datos del formulario aparece un mensaje de error y no se permite el envio del formulario.
+
+
+
+
 
 
 

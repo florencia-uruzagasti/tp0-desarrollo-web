@@ -11,6 +11,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="shortcut icon" href="/assets/icons8-paisaje-48.png" type="image/x-icon">
+    
     <title>Norte Argentino | Contacto</title>
 </head>
 
@@ -18,73 +22,55 @@
     <main>
         <header>
             <!-- Imagenes del encabezado-->
-            <img src="https://media.tacdn.com/media/attractions-content--1x-1/0b/2c/ef/d8.jpg" alt="Norte Argentino" >
+            <img src="https://media.tacdn.com/media/attractions-content--1x-1/0b/2c/ef/d8.jpg" alt="Norte Argentino">
             <img src="https://www.southamerica.travel/wp-content/uploads/2019/08/train-bridge-argentina-gallery.jpg "
-                alt="Norte Argentino" >
+                alt="Norte Argentino">
             <img src="https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/dtwfnq4tdau8oilglero"
-                alt="Norte Argentino" >
-            <img src="https://c3f5t3c3.rocketcdn.me/wp-content/uploads/2015/07/cafayate.jpg" alt="Norte Argentino" >
-            <img src="https://hablemosdeargentina.com/wp-content/uploads/2018/05/Iruya-Salta.jpg" alt="Norte Argentino" >
-            
+                alt="Norte Argentino">
+            <img src="https://c3f5t3c3.rocketcdn.me/wp-content/uploads/2015/07/cafayate.jpg" alt="Norte Argentino">
+            <img src="https://hablemosdeargentina.com/wp-content/uploads/2018/05/Iruya-Salta.jpg" alt="Norte Argentino">
+
         </header>
         <div class="logo">
-            <a href="index.html" class="logo"><h1>Noroeste Argentino</h1></a>
+            <a href="index.html" class="logo">
+                <h1>Noroeste Argentino</h1>
+            </a>
         </div>
         <nav class="menu">
-                <!-- Navegacion del usuario, por aqui el usuario entrara para ser redirigido a otras páginas -->
-                <a href="#index.html">Inicio</a>
-                <a href="alojamiento.html">Alojamientos</a>
-                <a href="provincias.html">Provincias</a>
-                <a href="tendencias.html">Tendencias</a>
-                <a href="contacto.html">Contacto</a>
+            <!-- Navegacion del usuario, por aqui el usuario entrara para ser redirigido a otras páginas -->
+            <a href="#index.html">Inicio</a>
+            <a href="alojamiento.html">Alojamientos</a>
+            <a href="provincias.html">Provincias</a>
+            <a href="tendencias.html">Tendencias</a>
+            <a href="contacto.html">Contacto</a>
         </nav>
-        <form action="" class="bg-light">
-            <div class="container" style="width:70%">
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-                    <small id="helpId" class="form-text text-danger">*Obligatorio</small>
-                </div>
-                <div class="mb-3">
-                    <label for="apellido" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-                    <small id="helpId" class="form-text text-danger">*Obligatorio</small>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
-                        placeholder="abc@mail.com">
-                    <small id="emailHelpId" class="form-text text-danger">*Obligatorio</small>
-                </div>
-                <div class="mb-3">
-                    <label for="telefono" class="form-label">Telefono</label>
-                    <input type="number" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-                </div>
-                <div class="mb-3">
-                    <label for="" class="form-label">Provincia</label>
-                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                        <option value="1">Jujuy</option>
-                        <option value="2">Salta</option>
-                        <option value="3">Tucumán</option>
-                    </select>
-                </div>
-                <label for="comment">Escribinos tu consulta:</label>
-                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-                <br>
-                <button class="btn btn-primary" type="submit">Enviar</button>
-                <br>
-            </div>
+        <!-- Formulario -->
+        <form action="#" target="_blank" name="Formulario" id="Formulario" onsubmit="return validar()">
+            <h2><strong>Formulario de Contacto</strong></h2>
+            <label for="nombre:"  >Nombre (Obligatorio):</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escriba su Nombre" required><br>
+            <label for="Apellido:">Apellido (Obligatorio):</label>
+            <input type="text" name="Apellido" id="apellido" placeholder="Escriba su Apellido" required><br>
+            <label for="email:">Email (Obligatorio):</label>
+            <input size="50" type="email" name="email" id="email" placeholder="Escriba su Email" required><br>
+            <label for="celular">Celular (sin + 54 9)</label>
+            <input type="number" name="celular" id="celular" placeholder="Escriba su Celular" required><br>
+            <label for="provincia">Provincia</label>
+            <input type="text" name="provincia" id="provincia" placeholder="Escriba su Provincia" required><br>
+            <label for="comentario">¿Cúal es tu consulta?:</label><br>
+            <textarea name="comentario" id="comentario" placeholder="Escribe aqui (campo obligatorio)" cols="30"
+                rows="10" required ></textarea><br>
+            <input id="send" type="submit" value="Enviar"  class="btn" onclick="event">
         </form>
+
     </main>
     <footer>
         &copy;Proyecto desarrollado por:
-        <ul>
-            <li>Florencia</li>
-            <li>Paula</li>
-            <li>Rocio</li>
-        </ul>
+        <p> Florencia <br> Rocio </p>
         <p>Todos los derechos reservados 2022</p>
     </footer>
+    <!-- custom js file link -->
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
