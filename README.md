@@ -12,7 +12,7 @@
    + Rocio Micaela Alderete :arrow_right: HTML
    + María Florencia Uruzagasti :arrow_right: CSS
    + Romero Paula Fernanda :arrow_right: JS
-+ La página se puede ver por : https://admirable-crepe-f49385.netlify.app/
++ La página se puede ver por : https://cheery-jalebi-3551ff.netlify.app/
 + La paleta de colores fue elegida en colorhunt.
 + La maquetación la determinamos en grupo antes de iniciar con el proyecto como tal.
 
@@ -23,6 +23,11 @@ En la rama feature/Uruzagasti-agregandoCSS estuve trabajando:
 * Los commits que fui realizando son descriptivos asi que cualquiera que acceda al código podra visualizar que tipo de cambios se hicieron,
 gran parte del codigo(tanto en el css como en el html) se trato de ocupar los comentarios para el mismo fin que mencione anteriormente.
 
+***Actualizaciones:***
+   * Debido a la repentina salida de una de nuestras integrantes nos encargamos de hacer el JS, por mi parte agregue la API en la rama de featureAlderete-Js y tambien     algunas correcciones de visualización
+   * En styles.css hay una @media solamente para una seccion, que es la de historia y gastronomia para que se pueda visualizar correctamente laptop.
+   * La API que fue usada es: https://jsonplaceholder.typicode.com/posts
+
 ### Rocio Micaela Alderete
 En la rama feature/Alderete-agregandoHtml estuve agregando:
 * El archivo html de cada una de las paginas que habiamos acordado en la maquetación previa antes del desarrollo.
@@ -31,6 +36,9 @@ En la rama feature/Alderete-agregoTucuman:
 * Agregue una hoja de Html individual para una provincia pero luego se descartó el cambio por que consideramos repetitivo el contenido asi que esta rama no se usó.
 En la rama featureAlderete-Js:
 * Se creo en la carpeta que contiene el archivo de JavaScript, el cual contiene la funcion que verifica que los datos del formulario sean correctos. Controla el largo de los datos tal como sería necesario para guardarlos en una base de datos y que los campos obligatorios no esten vacios. Controla el tipo de dato en el campo celular y tambien verifica que la cadena de caracteres de email tenga la estructura valida con el uso de una expresión. En caso de ser invalidos los datos del formulario aparece un mensaje de error y no se permite el envio del formulario.
+
+
+
 
 
 
