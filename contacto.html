@@ -44,17 +44,19 @@
             <a href="tendencias.html">Tendencias</a>
             <a href="contacto.html">Contacto</a>
         </nav>
+        <!-- Formulario -->
         <form action="#" target="_blank" name="Formulario" id="Formulario" onsubmit="return validar()">
-            <label for="nombre:">Nombre (Obligatorio):</label>
-            <input type="text" name="nombre" id="nombre" required><br>
+            <h2><strong>Formulario de Contacto</strong></h2>
+            <label for="nombre:"  >Nombre (Obligatorio):</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escriba su Nombre" required><br>
             <label for="Apellido:">Apellido (Obligatorio):</label>
-            <input type="text" name="Apellido" id="apellido" required><br>
+            <input type="text" name="Apellido" id="apellido" placeholder="Escriba su Apellido" required><br>
             <label for="email:">Email (Obligatorio):</label>
-            <input size="50" type="email" name="email" id="email" required><br>
+            <input size="50" type="email" name="email" id="email" placeholder="Escriba su Email" required><br>
             <label for="celular">Celular (sin + 54 9)</label>
-            <input type="tel" name="celular" id="celular" required><br>
+            <input type="number" name="celular" id="celular" placeholder="Escriba su Celular" required><br>
             <label for="provincia">Provincia</label>
-            <input type="text" name="provincia" id="provincia" required><br>
+            <input type="text" name="provincia" id="provincia" placeholder="Escriba su Provincia" required><br>
             <label for="comentario">¿Cúal es tu consulta?:</label><br>
             <textarea name="comentario" id="comentario" placeholder="Escribe aqui (campo obligatorio)" cols="30"
                 rows="10" required ></textarea><br>
@@ -64,11 +66,7 @@
     </main>
     <footer>
         &copy;Proyecto desarrollado por:
-        <ul class="integrants">
-            <li>Florencia</li>
-            <li>Paula</li>
-            <li>Rocio</li>
-        </ul>
+        <p> Florencia <br> Rocio </p>
         <p>Todos los derechos reservados 2022</p>
     </footer>
     <!-- custom js file link -->
